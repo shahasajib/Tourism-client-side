@@ -1,0 +1,22 @@
+.footer-area{
+    background-color:#262339;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-info{
+    margin: 10px;
+    text-align: left;
+}
+.icon{
+    color: tomato;
+    font-size: large;
+    
+}
+
+.contact-part{
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
