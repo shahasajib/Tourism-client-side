@@ -14,6 +14,7 @@ import PrivateRoute from './Pages/LogIn/PrivateRoute/PrivateRoute';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import ClientComment from './Pages/Client Comment/ClientComment';
 import Footer from './Pages/Footer/Footer';
+import Error from './Pages/Not Found/Error';
 function App() {
   return (
     <div className="App">
@@ -39,8 +40,11 @@ function App() {
             <Route path='/logIn'>
               <LogIn></LogIn>
             </Route>
-            <Route exact path="/addPackage">
+            <PrivateRoute exact path="/addPackage">
               <AddPackage></AddPackage>
+            </PrivateRoute>
+            <Route exact path="*">
+              <Error></Error>
             </Route>
 
           </Switch>
