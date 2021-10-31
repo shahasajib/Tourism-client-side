@@ -7,7 +7,7 @@ const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://possessed-werewolf-14808.herokuapp.com/packages', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Package added sucessfully")

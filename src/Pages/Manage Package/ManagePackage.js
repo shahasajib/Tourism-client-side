@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react';
 const ManagePackage = () => {
     const [tourP, setTourP] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://possessed-werewolf-14808.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setTourP(data))
     }, [])
     const handleDelete = id => {
-        const uri = `http://localhost:5000/packages/${id}`
+        const uri = `https://possessed-werewolf-14808.herokuapp.com/packages/${id}`
         fetch(uri, {
             method: "DELETE",
             headers: { "content-type": "application/json" },

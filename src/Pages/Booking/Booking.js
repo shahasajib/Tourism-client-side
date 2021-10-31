@@ -12,7 +12,7 @@ const Booking = () => {
         history.push('/myorder')
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${tourPackageId}`)
+        fetch(`https://possessed-werewolf-14808.herokuapp.com/packages/${tourPackageId}`)
             .then(res => res.json())
             .then(data => setDetail(data))
     }, [])
